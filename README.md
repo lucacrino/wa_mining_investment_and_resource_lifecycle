@@ -39,6 +39,16 @@ and corporate strategists.
 
 ## 📂 Repository Structure
 
+```
+wa_mining_investment_project/
+├── /sql
+│   ├── /ddl
+│   └── /queries
+├── /data
+└── /powerbi
+```
+
+
 
 ## 🛠️ Tech Stack
 - PostgreSQL 18
