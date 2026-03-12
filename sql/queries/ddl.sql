@@ -353,3 +353,65 @@ CREATE TABLE IF NOT EXISTS public.site_operators
     op_fax text,
     op_email text
 )
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.site_production
+(
+    site_code varchar,
+    short_title text,
+    period_interval text,
+    start_date date,
+    end_date date,
+    production_type text,
+    product_name text,
+    quantity numeric,
+    quantity_units text,
+    accuracy text,
+    in_total text,
+    commodity text,
+    grade numeric,
+    grade_unit text,
+    contained_metal numeric,
+    contained_metal_unit text
+)
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.site_project
+(
+    site_code varchar,
+    short_title text,
+    title text,
+    type text,
+    sub_type text,
+    stage text,
+    confidentiality text,
+    project_code varchar,
+    project_title text,
+    latitude numeric,
+    longitude numeric,
+    mga_zone integer,
+    easting numeric,
+    northing numeric,
+    group_site text,
+    commodities text,
+    commodity_groups text,
+    target_commodity_groups text,
+    mineralization_style text,
+    secondary_mineralization_style text,
+    map_sheet_no_100k integer,
+    map_sheet_name_100k text,
+    map_sheet_no_250k text,
+    map_sheet_name_250k text,
+    lga_name text,
+    development_region text,
+    district_no integer,
+    district_name text,
+    tectonic_unit text,
+    eil_flag text,
+    eis_flag text,
+    gbrm_flag text
+)
