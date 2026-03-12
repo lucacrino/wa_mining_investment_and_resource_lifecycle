@@ -124,3 +124,43 @@ CREATE TABLE IF NOT EXISTS public.major_resource_projects
     tectonic_unit text,
     CONSTRAINT major_resource_projects_pkey PRIMARY KEY (site_code)
 )
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.operating_mines
+(
+    site_code varchar,
+    short_title text,
+    title text,
+    site_type text,
+    sub_type text,
+    stage text,
+    project_code varchar,
+    project_title text,
+    longitude numeric,
+    latitude numeric,
+    easting numeric,
+    northing numeric,
+    mga_zone integer,
+    commodities text,
+    commodity_group_name text,
+    target_group_name text,
+    map_label_name text,
+    include_commodity_flag text,
+    map_commodities text,
+    active_flag text,
+    symbol text,
+    map_series text,
+    confidentiality text,
+    map_sheet_no_100k integer,
+    map_sheet_name_100k text,
+    map_sheet_no_250k text,
+    map_sheet_name_250k text,
+    lga_name text,
+    development_region text,
+    district_no integer,
+    district_name text,
+    tectonic_unit text,
+    CONSTRAINT operating_mines_pkey PRIMARY KEY (site_code)
+)
