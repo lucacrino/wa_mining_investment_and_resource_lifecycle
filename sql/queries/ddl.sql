@@ -415,3 +415,18 @@ CREATE TABLE IF NOT EXISTS public.site_project
     eis_flag text,
     gbrm_flag text
 );
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.site_tenements
+(
+    site_code varchar,
+    short_title text ,
+    tenement_code varchar,
+    status text,
+    applied_date date,
+    grant_date date,
+    expiry_date date,
+    dead_date date
+)
