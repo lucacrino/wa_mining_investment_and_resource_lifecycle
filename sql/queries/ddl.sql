@@ -164,3 +164,82 @@ CREATE TABLE IF NOT EXISTS public.operating_mines
     tectonic_unit text,
     CONSTRAINT operating_mines_pkey PRIMARY KEY (site_code)
 )
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.project_lookup
+(
+    project_code varchar,
+    status text,
+    start_date date,
+    end_date date,
+    project_mine_stage text,
+    project_exploration_stage text,
+    limo_flag text,
+    title text,
+    CONSTRAINT projects_pkey PRIMARY KEY (project_code)
+)
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.projects_owners
+(
+    project_code varchar,
+    project_title text,
+    owner_code varchar,
+    owner_name text,
+    start_date date,
+    end_date date,
+    holding_pct text,
+    entity_type text,
+    entity_id_dmp integer,
+    CONSTRAINT projects_owners_pkey PRIMARY KEY (owner_code, project_code)
+)
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.resource_estimates
+(
+    resource_code integer,
+    site_code varchar,
+    site_name text,
+    short_title text,
+    site_type text,
+    site_subtype text,
+    site_stage text,
+    siteprimarycommodity text,
+    project_short_name text,
+    project_code varchar,
+    latitude numeric,
+    longitude numeric,
+    tectonic_unit text,
+    local_government_authority text,
+    development_region text,
+    mining_district_name text,
+    mining_district_number integer,
+    map_sheet_100k integer,
+    map_sheet_250k text,
+    estimate_commodity text,
+    estimate_commodity_abbreviation text,
+    start_date date,
+    end_date date,
+    resource_category text,
+    resource_status text,
+    calculation_method text,
+    estimate_type text,
+    reporting_code text,
+    reporting_code_comments text,
+    estimate_quantity numeric,
+    estimate_quantity_unit text,
+    grade numeric,
+    grade_unit text,
+    contained_commodity numeric,
+    contained_commodity_unit text,
+    alternative_contained_commodity numeric,
+    alternative_contained_commodity_unit text,
+    resource_estimate_primary_mineralisation_style text,
+    resource_estimate_secondary_mineralisation_style text"
+)
