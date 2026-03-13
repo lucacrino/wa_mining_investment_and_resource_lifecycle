@@ -17,6 +17,6 @@ where development_region <> 'METRO'
 
 
 
---Table: operating_mines
---Objective: district_name
+--Table: 
+--Objective: 
 
