@@ -16,7 +16,7 @@ Starting from the visualization, stakeholders are able to target the following q
  
    **2. Who are the main players in this market?**
       
-   **3. How are operating projects performing?**
+   **3. How are the sites distributed across development region and commodity group?**
       
   
 
